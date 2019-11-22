@@ -1,0 +1,106 @@
+'Koempf.Thai:Massage':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Massage
+    icon: 'icon-spa'
+    group: plugins
+    inspector:
+      groups:
+        general:
+          label: general
+  properties:
+    name:
+      type: string
+      ui:
+        label: 'Name'
+        reloadIfChanged: true
+        inlineEditable: true
+        aloha:
+          autoparagraph: true
+          placeholder: 'Massage'
+        inspector:
+          group: general
+    type:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Massage-Typ'
+        inspector:
+          group: general
+    time-1:
+      type: string
+      ui:
+        label: Dauer
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Dauer'
+        inspector:
+          group: general
+    prices-1:
+      type: string
+      ui:
+        label: Kosten
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'z.B. 40,- €'
+        inspector:
+          group: general
+    time-2:
+      type: string
+      ui:
+        label: Dauer
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Dauer'
+        inspector:
+          group: general
+    prices-2:
+      type: string
+      ui:
+        label: Kosten
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'z.B. 40,- €'
+        inspector:
+          group: general
+    time-3:
+      type: string
+      ui:
+        label: Dauer
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Dauer'
+        inspector:
+          group: general
+    prices-3:
+      type: string
+      ui:
+        label: Kosten
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'z.B. 40,- €'
+        inspector:
+          group: general
+    description:
+      type: string
+      ui:
+        reloadIfChanged: true
+        inlineEditable: true
+        inspector:
+          group: general
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Bild'
+        reloadIfChanged: true
+        inspector:
+          group: general

@@ -1,0 +1,82 @@
+.costs {
+  list-style: none;
+  overflow: auto;
+  clear: both;
+}
+
+.img-massage {
+  border-radius: 50%;
+  float:left;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.massage {
+  @include element-onecol;
+  padding: 50px;
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px){
+
+  .green {
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+  .green {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .description {
+    text-align: justify;
+    margin-top: 5%;
+  }
+
+  .img-massage {
+    float: none;
+    margin-bottom: 5%;
+  }
+
+  .massage {
+    @include element-onecol;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .green {
+    margin-left: 25%;
+  }
+}
+
+.prices {
+  display: inline-block;
+  color: darkolivegreen;
+  white-space: nowrap;
+  font-size: 90%;
+  padding-left: 30%;
+  padding-bottom: 2%;
+  margin: unset;
+}
+
+.time {
+  display: inline-block;
+  color: darkolivegreen;
+  white-space: nowrap;
+  font-size: 90%;
+  padding-right: 30%;
+  padding-left: 30%;
+  padding-top: 2%;
+  margin: unset;
+  float: left;
+}
+
+.type {
+  color: darkolivegreen;
+  margin-bottom: 2%;
+}

@@ -1,0 +1,19 @@
+prototype(Koempf.Thai:DefaultPage) < prototype(Neos.Neos:Page) {
+    head {
+        stylesheets.site = Neos.Fusion:Template {
+            templatePath = 'resource://Koempf.Thai/Private/Templates/Page/Default.html'
+            sectionName = 'stylesheets'
+        }
+    }
+
+    body {
+        templatePath = 'resource://Koempf.Thai/Private/Templates/Page/Default.html'
+        sectionName = 'body'
+        parts {
+            menu = Neos.Neos:Menu
+        }
+    }
+}
+
+include: NodeTypes/**/*
+include: Plugins/**/*

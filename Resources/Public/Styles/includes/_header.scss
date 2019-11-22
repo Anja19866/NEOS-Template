@@ -1,0 +1,87 @@
+.header {
+   z-index: 1000;
+   background-image: linear-gradient(mistyrose, mistyrose, mistyrose, transparent);
+   padding: 2% 5% 0 5%;
+}
+
+.headline h1 {
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .logo {
+    width: 20%;
+    float:left;
+    margin-right: 2%;
+  }
+
+  .logo-mobil {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .point-buddha {
+    margin: 0 25px 25px 25px;
+  }
+
+  .sub-header {
+    font-size: 180%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .point-buddha {
+    margin: 0 25px 25px 25px;
+    width: 5%;
+  }
+
+  .sub-header {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .point-buddha {
+    margin: 0 25px;
+    width: 2%;
+  }
+
+  .sub-header {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .logo {
+    display: none;
+  }
+
+  .logo-mobil {
+    width: 50%;
+    margin: 10%;
+  }
+
+  .point-header {
+    display: none;
+  }
+
+  .point-buddha {
+    display: none;
+  }
+
+  .sub-header .phone-number {
+    white-space: nowrap;
+  }
+}
+
+.point-header {
+  margin: 0 25px 5px 25px;
+}
+

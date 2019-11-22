@@ -1,0 +1,63 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+<div class="massage">
+    <f:if condition="{image}">
+        <f:then>
+            <media:image image="{image}"
+                         class="img-massage"
+                         alt="Alt text"
+                         title="Title text"
+                         width="200%"
+                         height="200%"/>
+        </f:then>
+        <f:else>
+            <f:if condition="{neos:rendering.inEditMode()}">
+                <img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image"
+                     alt="Dummy image" class="neos-handle"/>
+            </f:if>
+        </f:else>
+    </f:if>
+
+    <h2>
+        <neos:contentElement.editable property="name" class="name"/>
+    </h2>
+    <neos:contentElement.editable property="type" class="type"/>
+    <div class="green">
+        <table>
+            <tbody class="times">
+            <tr class="costs">
+                <td>
+                    <neos:contentElement.editable property="time-1" class="time"/>
+                </td>
+                <td>
+                    <neos:contentElement.editable property="prices-1" class="prices"/>
+                </td>
+            </tr>
+            <tr class="costs">
+                <td>
+                    <neos:contentElement.editable property="time-2" class="time"/>
+                </td>
+                <td>
+                    <neos:contentElement.editable property="prices-2" class="prices"/>
+                </td>
+            </tr>
+            <tr class="costs">
+                <td>
+                    <neos:contentElement.editable property="time-3" class="time"/>
+                </td>
+                <td>
+                    <neos:contentElement.editable property="prices-3" class="prices"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="description">
+        <neos:contentElement.editable property="description" class="description"/>
+    </div>
+</div>
+
+
+
+
+

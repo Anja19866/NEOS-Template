@@ -1,0 +1,73 @@
+@import 'includes/_mixins.scss';
+
+@import 'includes/_buddha.scss';
+@import 'includes/_guestbook.scss';
+@import 'includes/_header.scss';
+@import 'includes/_image.scss';
+@import 'includes/_massage.scss';
+@import 'includes/_menu.scss';
+@import 'includes/_open.scss';
+@import 'includes/_text.scss';
+@import 'includes/_two-column.scss';
+
+body {
+    font-family: 'Laila', serif;
+    background-color: mistyrose;
+    color: mediumvioletred;
+    font-size: 110%;
+}
+
+a {
+    color: mediumvioletred;
+}
+
+a:hover, a:focus {
+    background-color: mediumvioletred;
+    color: mistyrose;
+    text-decoration: none;
+    border-radius: 3px;
+}
+    h1 {
+        font-weight: bold;
+    }
+
+h3, h4, h5 {
+    color: darkolivegreen;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    h2 {
+        font-size: 130%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    h2 {
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        line-height: 200%;
+    }
+
+    h2 {
+        font-size: 125%;
+    }
+}
+
+.neos-nodetypes-image {
+    display: inline-block;
+    width: 80%;
+    border-radius: 50%;
+}
+
+

@@ -1,0 +1,51 @@
+.main-menu, .main-menu-footer {
+  background-image: linear-gradient(to right, mistyrose, mediumvioletred, mediumvioletred, mediumvioletred, mistyrose);
+}
+
+.main-menu-footer {
+  padding-left: 20%;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+  .main-menu {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .main-menu-footer {
+    padding: unset;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .main-menu {
+    padding: unset;
+  }
+}
+
+.menu-item {
+  display: inline-block;
+  list-style: none;
+  font-weight: bold;
+}
+
+a.menu-link {
+  display: inline-block;
+  text-decoration: none;
+  color: mistyrose;
+  padding: 10px;
+}
+
+a.menu-link:hover, .menu-link:active, .menu-link:focus {
+  background: mistyrose;
+  color: mediumvioletred;
+  text-decoration: none;
+  border-radius: unset;
+}
+
+

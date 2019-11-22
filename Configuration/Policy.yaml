@@ -1,0 +1,11 @@
+privilegeTargets:
+  Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    'Koempf.Thai:StandardControllerActions':
+      matcher: 'method(Koempf\Thai\Controller\StandardController->(index|other|third)Action())'
+
+roles:
+  'Neos.Flow:Everybody':
+    privileges:
+    -
+      privilegeTarget: 'Koempf.Thai:StandardControllerActions'
+      permission: GRANT

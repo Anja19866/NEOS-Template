@@ -1,0 +1,5 @@
+prototype(Koempf.Thai:ArticlePlugin) < prototype(Neos.Neos:Plugin) {
+    package = 'Koempf.Thai'
+    controller = 'Standard'
+    action = 'article'
+}

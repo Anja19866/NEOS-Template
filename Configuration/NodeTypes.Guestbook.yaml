@@ -1,0 +1,63 @@
+'Koempf.Thai:Guestbook':
+  superTypes:
+    'Neos.Neos:Content': true
+#    'Neos.Neos:Hidable': true
+#    'Neos.Neos:Timeable': true
+  ui:
+    label: Guestbook
+    icon: 'icon-address-book'
+    group: plugins
+    inspector:
+      groups:
+        general:
+          label: general
+  properties:
+    titel:
+      type: string
+      ui:
+        reloadIfChanged: true
+        inlineEditable: true
+        aloha:
+          autoparagraph: false
+          placeholder: 'Kundenstimme'
+        inspector:
+          group: general
+    postName:
+      type: string
+      ui:
+        label: 'Überschrift'
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          autoparagraph: false
+          placeholder: 'Endlich keine Schmerzen mehr!'
+        inspector:
+          group: general
+    message:
+      type: string
+      ui:
+        label: 'Mitteilung'
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          autoparagraph: true
+          placeholder: 'z.B.: Ich fühle mich wie neu geboren nach der Behandlung'
+        inspector:
+          group: general
+    author:
+      type: string
+      ui:
+        label: 'Autor'
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Name des Verfassers'
+        inspector:
+          group: general
+    image:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: 'Foto des Autors'
+        reloadIfChanged: true
+        inspector:
+          group: general

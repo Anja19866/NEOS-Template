@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <site name="thai.test" state="1" siteResourcesPackageKey="Koempf.Thai" siteNodeName="koempf-thai">
+  <nodes formatVersion="2.0">
+   <node nodeName="koempf-thai">
+    <variant workspace="live" nodeType="Koempf.Thai:Page" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+     <dimensions/>
+     <accessRoles __type="array"/>
+     <properties>
+      <title __type="string">Home</title>
+      <uriPathSegment __type="string">home</uriPathSegment>
+     </properties>
+    </variant>
+    <node nodeName="main">
+     <variant workspace="live" nodeType="Neos.Neos:ContentCollection" sortingIndex="100" version="1" removed="" hidden="" hiddenInIndex="">
+      <dimensions/>
+      <accessRoles __type="array"/>
+     </variant>
+    </node>
+   </node>
+  </nodes>
+ </site>
+</root>

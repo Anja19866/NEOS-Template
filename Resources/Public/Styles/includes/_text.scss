@@ -1,0 +1,20 @@
+.neos-nodetypes-text {
+  @include element-onecol;
+  padding: 50px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .neos-nodetypes-text {
+    @include element-onecol;
+    padding: 30px;
+    width: 100%;
+  }
+}
+
+pre {
+  font-family: 'Laila', serif;
+  color: mediumvioletred;
+  font-size: 110%;
+}

@@ -1,0 +1,138 @@
+'Koempf.Thai:Open':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: Open
+    icon: 'icon-clock'
+    group: plugins
+    inspector:
+      groups:
+        general:
+          label: general
+  properties:
+    open:
+      type: string
+      ui:
+        label: 'Öffnungszeiten'
+        reloadIfChanged: true
+        inlineEditable: true
+        aloha:
+          placeholder: 'Öffungszeiten'
+        inspector:
+          group: general
+    day-1:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Wochentag'
+        inspector:
+          group: general
+    hours-1:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Uhrzeit: von - bis'
+        inspector:
+          group: general
+    day-2:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Wochentag'
+        inspector:
+          group: general
+    hours-2:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Uhrzeit: von - bis'
+        inspector:
+          group: general
+    day-3:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Wochentag'
+        inspector:
+          group: general
+    hours-3:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Uhrzeit: von - bis'
+        inspector:
+          group: general
+    day-4:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Wochentag'
+        inspector:
+          group: general
+    hours-4:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Uhrzeit: von - bis'
+        inspector:
+          group: general
+    day-5:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Wochentag'
+        inspector:
+          group: general
+    hours-5:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Uhrzeit: von - bis'
+        inspector:
+          group: general
+    day-6:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Wochentag'
+        inspector:
+          group: general
+    hours-6:
+      type: string
+      ui:
+        inlineEditable: true
+        reloadIfChanged: true
+        aloha:
+          placeholder: 'Uhrzeit: von - bis'
+        inspector:
+          group: general
+    appointment:
+      type: string
+      ui:
+        reloadIfChanged: true
+        inlineEditable: true
+        inspector:
+          placeholder: 'Terminvereinbarung'
+          group: general

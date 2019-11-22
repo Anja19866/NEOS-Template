@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+<html>
+<head>
+    <f:section name="stylesheets">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="{f:uri.resource(path: 'Styles/main.css', package: 'Koempf.Thai')}"/>
+        <link href="https://fonts.googleapis.com/css?family=Laila:400,600" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png"
+              href="{f:uri.resource(path: 'Images/favicon.png', package: 'Koempf.Thai')}">
+    </f:section>
+</head>
+<body>
+<f:section name="body">
+    <div class="header">
+        <div class="logo">
+            <img src="{f:uri.resource(path: 'Images/MukthaLotus4b1000.png', package: 'Koempf.Thai')}" width="100%"/>
+        </div>
+        <div>
+            <img class="logo-mobil" src="{f:uri.resource(path: 'Images/MukthaLotus4b1000.png', package: 'Koempf.Thai')}"
+                 width="100%"/>
+        </div>
+        <div class="title">
+            <div class="headline">
+                <h1>
+                    Thai - Massage
+                    <img class="point-buddha"
+                         src="{f:uri.resource(path: 'Images/MukthaBuddha1.png', package: 'Koempf.Thai')}" width="45">
+                    ANN MUKTHA
+                </h1>
+                <div class="sub-header">
+                    <span class="city">75365 Calw-Hirsau</span>
+                    <img class="point-header"
+                         src="{f:uri.resource(path: 'Images/MukthaLotus4b1000.png', package: 'Koempf.Thai')}"
+                         width="25">
+                    <span class="phone-number">Telefon: <a href="tel:00497051962664">0 70 51 / 962 664</a></span>
+                </div>
+            </div>
+            <nav class="nav-wrapper">
+                <div class="menu">
+                    <nav class="main-menu">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="/" class="menu-link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/#massagen" class="menu-link">
+                                    Massagen
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/#oeffnungszeiten" class="menu-link">
+                                    Öffnungszeiten
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="buddha-div">
+        <div class="buddha">
+            <img src="{f:uri.resource(path: 'Images/MukthaBuddha1.png', package: 'Koempf.Thai')}" width="100%">
+        </div>
+    </div>
+    <div class="content">
+        <div class="container massagen" id="massagen">
+            {content.main -> f:format.raw()}
+        </div>
+        <div>
+            <div class="footer">
+                <nav class="nav-wrapper">
+                    <div class="menu">
+                        <nav class="main-menu-footer">
+                            <ul>
+                                <li class="menu-item">
+                                    <a href="/" class="menu-link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/#massagen" class="menu-link">
+                                        Massagen
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="/#oeffnungszeiten" class="menu-link">
+                                        Öffnungszeiten
+                                    </a>
+                                </li>
+                                <li id="imp" class="menu-item">
+                                    <a href="/impressum.html" class="menu-link">
+                                        Impressum
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</f:section>
+</body>
+</html>

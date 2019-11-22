@@ -1,0 +1,45 @@
+.appointment {
+  margin-top: 2%;
+  font-weight: bolder;
+}
+
+.appointment .phone-number {
+  white-space: nowrap;
+}
+
+.author {
+  margin-top: 10%;
+}
+
+.column {
+  display: inline-block;
+  padding: 50px;
+  width: 50%;
+}
+
+.neos-nodetypes-twocolumn {
+  @include element-twocol;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .column {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .column {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .neos-nodetypes-twocolumn {
+    margin-top: 1%;
+    margin-left: unset;
+    background-image: radial-gradient(#fff5ee, #fff5ee, #ffecde, #ffecde);
+    width: 100%;
+    border-radius: 3px;
+  }
+}

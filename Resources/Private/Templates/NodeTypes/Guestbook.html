@@ -1,0 +1,38 @@
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+<div class="guestbook">
+    <div>
+    <img class="li-oben" src="{f:uri.resource(path: 'Images/Gaensefuesschen.png', package: 'Koempf.Thai')}" width="7%"/>
+    </div>
+    <div class="message">
+        <h3>
+            <neos:contentElement.editable property="titel" class="titel"/>
+        </h3>
+        <neos:contentElement.editable property="message"/>
+        <f:if condition="{image}">
+            <f:then>
+                <media:image image="{image}"
+                             class="img-guestbook"
+                             alt="Alt text"
+                             title="Title text"
+                             width="50%"
+                             height="50%"/>
+            </f:then>
+            <f:else>
+                <f:if condition="{neos:rendering.inEditMode()}">
+                    <img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}"
+                         title="Dummy image"
+                         alt="Dummy image" class="neos-handle"/>
+                </f:if>
+            </f:else>
+        </f:if>
+        <neos:contentElement.editable property="author" class="author"/>
+    </div>
+</div>
+        <img class="re-unten" src="{f:uri.resource(path: 'Images/Gaensefuesschen.png', package: 'Koempf.Thai')}"
+             width="7%"/>
+
+
+
+
+

@@ -1,0 +1,13 @@
+@mixin element-onecol {
+  margin-top: 1%;
+  background-image: radial-gradient(#fff5ee, #fff5ee, #ffecde, #ffecde);
+  border-radius: 3px;
+}
+
+@mixin element-twocol {
+  margin-top: 1%;
+  margin-left: unset;
+  background-image: radial-gradient(#fff5ee, #fff5ee, #ffecde, #ffecde);
+  width: 80%;
+  border-radius: 3px;
+}

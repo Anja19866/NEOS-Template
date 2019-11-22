@@ -1,0 +1,9 @@
+'Koempf.Thai:Page':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    icon: 'icon-file'
+    label: 'Koempf.Thai Custom Page'
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
